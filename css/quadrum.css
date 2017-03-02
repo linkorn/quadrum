@@ -589,7 +589,8 @@ a {
     float: left;
     margin-top: 30px;
     padding-left: 10px;
-    border: 1px solid black !important; }
+    border: 1px solid black !important;
+    width: 80%; }
   #contact input {
     margin-left: -50px;
     display: inline;
