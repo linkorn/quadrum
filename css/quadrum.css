@@ -21,6 +21,7 @@
 body {
   transition: all 0.5s ease;
   overflow-x: hidden;
+  min-width:500px;
   width: 100%;
   height: 100%; }
 
