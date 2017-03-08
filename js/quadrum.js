@@ -1,11 +1,20 @@
-$('nav').load('components/nav.html');
+$('nav').load('components/nav.html',null,function(){
+     $('a.page-scroll').bind('click', function(event) {
+        event.preventDefault();
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+       
+    });
+});
 $('header').load('components/intro.html');
 $('#about').load('components/about.html');
 $('#portfolio').load('components/portfolio.html');
 $('#service').load('components/service.html');
 $('#service-mobile').load('components/service-mobile.html');
-$('#contact').load('components/contact.html');
-$('#partners').load('components/partners.html');
+$('#contact').load('components/contact1.html');
+$('#partners').load('components/partners1.html');
 $('footer').load('components/footer.html');
 
 function collapseNavbar() {
@@ -19,16 +28,6 @@ function collapseNavbar() {
 
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
-
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
 
 $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
