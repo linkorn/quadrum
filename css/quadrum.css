@@ -257,8 +257,14 @@ a {
         font-size: 26px; } }
 
 #about {
-  padding-top: 120px !important;
-  padding-bottom: 120px !important; }
+  /*padding-top: 120px !important;
+  padding-bottom: 120px !important; */
+  min-height: 963px;
+  height: 100vh;
+  display: table; }
+  #about .about-container {
+    display: table-cell;
+    vertical-align: middle; }
   #about .about-article-left {
     padding-right: 30px;
     padding-left: 30px; }
@@ -847,3 +853,146 @@ footer {
   padding-bottom: 20px; }
   footer p {
     margin: 0; }
+
+#project {
+  padding: 150px 0 100px 0; }
+  #project h1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 1px; }
+  #project .slideshow {
+    padding: 0;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%; }
+    #project .slideshow a {
+      text-decoration: none;
+      color: #333333;
+      position: relative; }
+    #project .slideshow a:hover {
+      cursor: pointer; }
+    #project .slideshow .detailSlider {
+      overflow: hidden;
+      position: relative;
+      z-index: 1000; }
+      #project .slideshow .detailSlider .detailSliderItem {
+        border-left: 10px solid white;
+        border-right: 10px solid white;
+        display: inline-block; }
+      #project .slideshow .detailSlider .detailSliderItem.activeLeft {
+        cursor: url("../img/leftArrow.png") 0 0, pointer; }
+      #project .slideshow .detailSlider .detailSliderItem.activeRight {
+        cursor: url("../img/rightArrow.png") 0 0, pointer; }
+      #project .slideshow .detailSlider .detailSliderItem.active {
+        cursor: default !important; }
+      #project .slideshow .detailSlider .slick-track {
+        background-color: #ffffff; }
+      #project .slideshow .detailSlider .slick-dots {
+        margin: 50px auto !important;
+        max-width: 1260px;
+        margin: 0 auto; }
+      #project .slideshow .detailSlider .slick-dots li {
+        display: inline-block; }
+      #project .slideshow .detailSlider .slick-dots li a {
+        padding: 10px 15px;
+        display: inline-block;
+        margin-bottom: 3px;
+        border: 1px solid transparent; }
+      #project .slideshow .detailSlider li a:after {
+        border-bottom: none !important;
+        transition: none; }
+      #project .slideshow .detailSlider .slick-dots li.active a {
+        border: 1px solid #d1d1d1; }
+  #project .project-description {
+    margin: 50px 0 100px 0;
+    font-size: 2em;
+    font-weight: bold; }
+  #project .img-full-width {
+    width: 100%; }
+  #project .project-info {
+    font-size: 16px;
+    float: right;
+    width: 100%;
+    margin-top: 80px;
+    background-color: #eaeaea;
+    padding: 80px 75px;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+    #project .project-info h3 {
+      letter-spacing: 1px; }
+    #project .project-info ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid #d1d1d1; }
+      #project .project-info ul li {
+        padding: 25px 0;
+        border-bottom: 1px solid #d1d1d1;
+        font-size: 13px;
+        line-height: 25px; }
+        #project .project-info ul li p {
+          font-size: 13px;
+          margin: 0; }
+        #project .project-info ul li b {
+          font-family: "Roboto-Bold";
+          text-transform: uppercase;
+          letter-spacing: 1px; }
+
+#design {
+  padding: 150px 0 100px 0; }
+  #design h2 {
+    font-size: 18px;
+    letter-spacing: 10px; }
+  #design p, #design ul {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Roboto-Light";
+    line-height: 2.2em;
+    text-align: justify;
+    text-justify: inter-ideograph; }
+  #design b {
+    font-family: "Roboto-Bold"; }
+  #design .slideshow .slide-item {
+    padding: 0;
+    margin: 0; }
+  #design .slideshow .slide-item-cl {
+    position: relative;
+    width: 100%;
+    /* desired width */ }
+  #design .slideshow .slide-item-cl:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    /* initial ratio of 1:1*/ }
+  #design .slideshow a, #design .slideshow span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; }
+  #design .slideshow a.all-works {
+    background: rgba(0, 0, 0, 0.7); }
+    #design .slideshow a.all-works div.all-works-container {
+      display: table;
+      width: 100%;
+      height: 100%; }
+      #design .slideshow a.all-works div.all-works-container div {
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+        font-family: "Roboto-Bold";
+        text-decoration: none;
+        font-size: 14px; }
