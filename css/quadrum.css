@@ -167,6 +167,7 @@ a {
         margin-left: 10px;
         margin-right: 10px; } }
     .navbar-custom .nav li a {
+      font-size: 12px;
       -webkit-transition: background .3s ease-in-out;
       -moz-transition: background .3s ease-in-out;
       transition: background .3s ease-in-out; }
@@ -481,16 +482,18 @@ a {
       transition: opacity .3s linear, background-size  .3s linear;
       text-decoration: none; }
       #portfolio .grid-item .overlay .hover-text, #portfolio .grid-item .overlay-all .hover-text {
+        font-family: "Roboto-Medium";
         text-transform: uppercase;
         width: 250px;
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin: 0; }
+        margin: 0;
+        font-size: 16px; }
         #portfolio .grid-item .overlay .hover-text small, #portfolio .grid-item .overlay-all .hover-text small {
           text-transform: capitalize !important;
-          font-style: italic;
+          font-family: "Roboto-Regular";
           font-size: 0.7em; }
     #portfolio .grid-item .overlay-all {
       opacity: 1;
@@ -528,7 +531,7 @@ a {
     height: 190px; }
     #portfolio .grid-item--small .hover-text {
       width: 180px !important;
-      font-size: 15px; }
+      font-size: 14px !important; }
 
 .grid-item-1 {
   background-image: url(../img/portfolio-1.png); }
@@ -682,7 +685,7 @@ a {
   .partners-section .btn-default {
     color: white;
     background-color: black;
-    border: solid 2px #fff; }
+    border: solid 1px #fff; }
     .partners-section .btn-default:hover, .partners-section .btn-default:focus {
       outline: none;
       color: black;
@@ -844,6 +847,9 @@ a {
     border-left: none;
     border-right: none;
     border-bottom: 1px solid white !important; }
+  #contact .button-container {
+    float: left;
+    width: 80%; }
   #contact .btn {
     margin-top: 20px;
     padding-left: 20px;
@@ -857,7 +863,7 @@ a {
   #contact .btn-default {
     color: white;
     background-color: black;
-    border: 2px solid white; }
+    border: 1px solid white; }
     #contact .btn-default:hover, #contact .btn-default:focus {
       outline: none;
       color: black;
@@ -881,11 +887,13 @@ a {
     line-height: 30px;
     font-size: 16px; }
   #contact .slim-contacts {
+    padding-left: 20px;
     font-family: "Roboto-Light";
     line-height: 8px;
     font-size: 16px;
     margin-bottom: 30px; }
   #contact .bold-contacts {
+    padding-left: 20px;
     margin-top: 5px;
     font-family: "Roboto-Bold";
     line-height: 10px;
