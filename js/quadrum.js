@@ -4,10 +4,11 @@ function initMain(){
             event.preventDefault();
             var $anchor = $(this);
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
+                scrollTop: $($anchor.attr('href').replace('/','')).offset().top
             }, 1500, 'easeInOutExpo');
            
         });
+        collapseNavbar();
     });
     $('header').load('components/intro.html');
     $('#about').load('components/about.html');
@@ -16,11 +17,11 @@ function initMain(){
     $('#service-mobile').load('components/service-mobile.html');
     $('#contact').load('components/contact1.html');
     $('#partners').load('components/partners1.html');
-    $('footer').load('components/footer.html');
+    $('footer').load('components/footer.html');    
 }
 
 function initProject(){
-     $('nav').load('components/inner-nav.html');
+    $('nav').load('components/inner-nav.html');
     $("#project").load('components/project-1.html',function(){
         var carouselSlider = new $.carouselSlider( $('.detailSlider')); 
     });

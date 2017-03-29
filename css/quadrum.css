@@ -83,7 +83,9 @@ a {
     vertical-align: middle; }
   .black-background footer {
     display: table-row;
-    height: 116px; }
+    height: 116px;
+    float: left;
+    width: 100%; }
 
 .navbar-custom {
   margin-bottom: 0;
@@ -144,7 +146,9 @@ a {
       outline: none; }
   .navbar-custom .navbar-brand {
     transition: all 0.5s;
-    padding: 10px 15px; }
+    padding: 10px 15px;
+    z-index: 100;
+    position: relative; }
     .navbar-custom .navbar-brand:focus {
       outline: none; }
   .navbar-custom a {
@@ -167,6 +171,7 @@ a {
         margin-left: 10px;
         margin-right: 10px; } }
     .navbar-custom .nav li a {
+      font-size: 12px;
       -webkit-transition: background .3s ease-in-out;
       -moz-transition: background .3s ease-in-out;
       transition: background .3s ease-in-out; }
@@ -290,12 +295,6 @@ a {
   #about .about-article-right {
     padding-left: 30px;
     padding-left: 30px; }
-  #about .col-lg-2 {
-    margin-right: 35px; }
-    #about .col-lg-2 img {
-      width: 180px;
-      margin-left: -10px;
-      margin-bottom: 20px; }
   #about .bold {
     font-family: "Roboto-BoldCondensed";
     line-height: 20px !important;
@@ -306,7 +305,8 @@ a {
     line-height: 15px !important;
     font-family: "Roboto-Condensed";
     font-size: 14px !important;
-    text-align: center !important; }
+    text-align: center !important;
+    margin-bottom: 0; }
   #about h1 {
     font-size: 18px;
     margin-top: 20px;
@@ -320,6 +320,35 @@ a {
   @media (max-width: 768px) {
     #about .slim {
       line-height: 30px !important; } }
+  #about .person-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    #about .person-list .person-elem {
+      padding: 0 15px;
+      cursor: pointer; }
+      #about .person-list .person-elem img {
+        width: 180px;
+        margin-left: -10px;
+        margin-bottom: 20px; }
+      #about .person-list .person-elem .p-social {
+        opacity: 0;
+        text-align: center !important;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        transition: .5s;
+        margin-bottom: 0; }
+        #about .person-list .person-elem .p-social a {
+          color: #000;
+          font-size: 18px;
+          margin: 0 5px; }
+          #about .person-list .person-elem .p-social a:hover {
+            color: #65a7dd; }
+      #about .person-list .person-elem:hover .p-social {
+        opacity: 1; }
+  @media (max-width: 768px) {
+    #about .person-list {
+      justify-content: center; } }
 
 /*#service{
   width:100%;
@@ -469,7 +498,8 @@ a {
     height: 380px;
     background-position: center center;
     background-size: 100%;
-    transition: background-size  .3s linear; }
+    transition: background-size  .3s linear;
+    text-decoration: none; }
     #portfolio .grid-item .overlay, #portfolio .grid-item .overlay-all {
       display: flex;
       background-position: center center;
@@ -481,16 +511,18 @@ a {
       transition: opacity .3s linear, background-size  .3s linear;
       text-decoration: none; }
       #portfolio .grid-item .overlay .hover-text, #portfolio .grid-item .overlay-all .hover-text {
+        font-family: "Roboto-Medium";
         text-transform: uppercase;
         width: 250px;
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin: 0; }
+        margin: 0;
+        font-size: 16px; }
         #portfolio .grid-item .overlay .hover-text small, #portfolio .grid-item .overlay-all .hover-text small {
           text-transform: capitalize !important;
-          font-style: italic;
+          font-family: "Roboto-Regular";
           font-size: 0.7em; }
     #portfolio .grid-item .overlay-all {
       opacity: 1;
@@ -528,7 +560,7 @@ a {
     height: 190px; }
     #portfolio .grid-item--small .hover-text {
       width: 180px !important;
-      font-size: 15px; }
+      font-size: 14px !important; }
 
 .grid-item-1 {
   background-image: url(../img/portfolio-1.png); }
@@ -682,7 +714,7 @@ a {
   .partners-section .btn-default {
     color: white;
     background-color: black;
-    border: solid 2px #fff; }
+    border: solid 1px #fff; }
     .partners-section .btn-default:hover, .partners-section .btn-default:focus {
       outline: none;
       color: black;
@@ -844,7 +876,11 @@ a {
     border-left: none;
     border-right: none;
     border-bottom: 1px solid white !important; }
+  #contact .button-container {
+    float: left;
+    width: 80%; }
   #contact .btn {
+    float: right !important;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -857,36 +893,40 @@ a {
   #contact .btn-default {
     color: white;
     background-color: black;
-    border: 2px solid white; }
+    border: 1px solid white; }
     #contact .btn-default:hover, #contact .btn-default:focus {
       outline: none;
       color: black;
       background-color: white; }
   #contact .slim-uppercase {
-    padding-left: 20px;
+    padding-top: 26px;
+    padding-left: 73px;
     font-family: "Roboto-Light";
     line-height: 2px;
     text-transform: uppercase;
     font-size: 16px; }
   #contact .bold {
-    padding-left: 20px;
+    padding-left: 73px;
     margin-top: -15px;
     font-family: "Roboto-Bold";
     line-height: 30px;
     font-size: 16px; }
   #contact .slim {
-    padding-left: 20px;
+    padding-left: 73px;
     margin-top: -30px;
     font-family: "Roboto-Light";
     line-height: 30px;
     font-size: 16px; }
   #contact .slim-contacts {
+    padding-left: 73px;
+    padding-top: 12px;
     font-family: "Roboto-Light";
     line-height: 8px;
     font-size: 16px;
     margin-bottom: 30px; }
   #contact .bold-contacts {
-    margin-top: 5px;
+    padding-left: 73px;
+    padding-top: 12px;
     font-family: "Roboto-Bold";
     line-height: 10px;
     font-size: 16px; }
