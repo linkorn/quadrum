@@ -475,7 +475,8 @@ a {
     padding-left: 2%;
     padding-right: 2%;
     text-decoration: none !important;
-    color: black; }
+    color: black;
+    cursor: pointer; }
     #portfolio .portfolio-nav a:hover {
       color: #65a7dd; }
   @media (max-width: 800px) {
@@ -514,8 +515,6 @@ a {
         font-family: "Roboto-Medium";
         text-transform: uppercase;
         width: 250px;
-        padding-left: 50px;
-        padding-right: 50px;
         padding-top: 10px;
         padding-bottom: 10px;
         margin: 0;
@@ -904,32 +903,32 @@ a {
     font-family: "Roboto-Light";
     line-height: 2px;
     text-transform: uppercase;
-    font-size: 16px; }
+    font-size: 14px; }
   #contact .bold {
     padding-left: 73px;
     margin-top: -15px;
     font-family: "Roboto-Bold";
     line-height: 30px;
-    font-size: 16px; }
+    font-size: 14px; }
   #contact .slim {
     padding-left: 73px;
     margin-top: -30px;
     font-family: "Roboto-Light";
     line-height: 30px;
-    font-size: 16px; }
+    font-size: 14px; }
   #contact .slim-contacts {
     padding-left: 73px;
     padding-top: 12px;
     font-family: "Roboto-Light";
     line-height: 8px;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 30px; }
   #contact .bold-contacts {
     padding-left: 73px;
     padding-top: 12px;
     font-family: "Roboto-Bold";
     line-height: 10px;
-    font-size: 16px; }
+    font-size: 14px; }
     #contact .bold-contacts span {
       font-family: "Roboto-Light" !important; }
   #contact .col-lg-2 {

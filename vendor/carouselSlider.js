@@ -50,7 +50,7 @@
 
             $(window).bind("resize", resize);
 
-            $(window).bind("load", load);
+            //$(window).bind("load", load);
 
             $(document).on("click", ".activeLeft", prevChart);
             $(document).on("click", ".activeRight", nextChart);
@@ -70,6 +70,7 @@
                 });
 
             buildPagina();
+            setTimeout(load,100);
         }
 
         var nextChart = function(){
